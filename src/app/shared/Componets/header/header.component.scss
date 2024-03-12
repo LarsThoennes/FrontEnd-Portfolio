@@ -1,0 +1,80 @@
+.header-container {
+  background-color: rgb(255,252,243);
+  height: 92px;
+  width: 100vw;
+  position: fixed;
+  z-index: 999;
+
+  .header-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 2.5vh;
+
+    .header-logo {
+      height: 30px;
+    }
+
+    a {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      .burger-menu-icon-toggle {
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40px;
+        width: 40px;
+        animation: burger-menu-to-cross 2s;
+        background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=Variant5.png');
+      }
+
+      .burger-menu-icon {
+        background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=burger.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40px;
+        width: 40px;
+        animation: cross-to-burger-menu 2s;
+      }
+    }
+  }
+}
+
+@keyframes burger-menu-to-cross {
+  0% {
+    background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=burger.png');
+  }
+  20% {
+    background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=Transition.png');
+  }
+  40% {
+    background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=Variant3\ \(2\).png');
+  }
+  60% {
+    background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=Variant4.png');
+  }
+  100% {
+    background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=Variant5.png');
+  }
+}
+
+@keyframes cross-to-burger-menu {
+  0% {
+    background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=Variant5.png');
+  }
+  20% {
+    background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=Variant4.png');
+  }
+  40% {
+    background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=Variant3\ \(2\).png');
+  }
+  60% {
+    background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=Transition.png');
+  }
+  100% {
+    background-image: url('./../../../../assets/img/header/burger-menu/Property\ 1=burger.png');
+  }
+}

@@ -1,0 +1,52 @@
+* {
+  background-color: rgb(255,252,243);
+  display: flex;
+  flex-direction: row;
+}
+
+.say-hi-section-container {
+  background-image: url('./../../assets/img/menu-section/footer/Design\ ohne\ Titel\ \(1\).png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 35vh;
+
+
+   h1 {
+     position: absolute;
+     color: rgb(255,252,243);
+     background-color: black;
+     margin-top: 15vh;
+     margin-left: 10vw;
+     font-family: 'syne-extra-font';
+     font-size: 80px;
+     animation: h1-opacity 7s;
+
+     &:hover {
+       color: rgb(250,153,3);
+       cursor: default;
+     }
+ }
+   }
+
+
+ @keyframes h1-opacity {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+//  @media (min-width: 4500px) and (min-height:1800px) {
+//   .say-hi-section-container {
+//     margin-top: 20vh;
+//   }
+//  }
+//   @media (max-width: 4500px) and (max-height:1800px) {
+//     .say-hi-section-container {
+//       margin-top: 20vh;
+//     }
+// }

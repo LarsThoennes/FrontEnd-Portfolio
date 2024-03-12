@@ -1,0 +1,42 @@
+* {
+  height: 30vh;
+  width: 100vw;
+  background-color: rgb(255,252,243);
+}
+
+.next-section-arrow-left-container {
+  display: flex;
+}
+
+.next-section-arrow-left {
+  animation: next-section 1s ease-in-out infinite;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-left: 25vw;
+}
+
+.pseudo-container {
+  height: 0vh;
+  width: 0vw;
+}
+
+@keyframes next-section{
+  0% {
+    background-image: url('./../../../assets/img/next-section-arrow/left-side/Property\ 1=Default.png');
+  }
+  38% {
+    background-image: url('./../../../assets/img/next-section-arrow/left-side/Property\ 1=Default.png');
+  }
+  38% {
+    background-image: url('./../../../assets/img/next-section-arrow/left-side/Property\ 1=Variant2.png');
+  }
+  40% {
+    background-image: url('./../../../assets/img/next-section-arrow/left-side/Property\ 1=Variant2.png');
+  }
+  41% {
+    background-image: url('./../../../assets/img/next-section-arrow/left-side/Property\ 1=Variant3.png');
+  }
+  100% {
+    background-image: url('./../../../assets/img/next-section-arrow/left-side/Property\ 1=Variant3.png');
+  }
+}

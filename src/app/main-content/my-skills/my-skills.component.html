@@ -1,0 +1,14 @@
+<div id="mySkills" class="my-skills-container">
+  <h1>My skills</h1>
+  <div class="my-skills-box-border">
+    <div class="my-skills-box-content-container">
+      <div data-aos="flip-up" data-aos-easing="ease-in-out" *ngFor="let item of combinedData" class="my-skills-box-content">
+        <img class="my-skills-apllication-icon" src="./../../assets/img/my-skills/applications-icons/{{ item.icon }}">
+        <span class="my-skills-box-content-application-name"> {{ item.name }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

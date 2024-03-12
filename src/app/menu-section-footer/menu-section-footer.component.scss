@@ -1,0 +1,33 @@
+.menu-section-footer-container {
+  background-color: black;
+  padding-left: 2vw;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  h2 {
+    font-family: 'overpass-font';
+    color: white;
+  }
+
+  .app-icon-container {
+    display: flex;
+    flex-direction: row;
+    padding-right: 5vw;
+    gap: 10px;
+
+    .single-app-icon-container {
+      img {
+        max-width: 50px;
+      }
+
+      &:hover {
+        img {
+          transform: translateY(-10px);
+        }
+      }
+    }
+  }
+}
