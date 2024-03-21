@@ -6,11 +6,11 @@ import { EmailSectionComponent } from './main-content/email-section/email-sectio
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { ImprintComponent } from './imprint/imprint.component';
-import { MenuSectionComponent } from './menu-section/menu-section.component';
+import { MenuSectionComponent } from './shared/Componets/header/menu-section/menu-section.component';
 
 export const routes: Routes = [
   { path: '', component: MainContentComponent },
   { path: 'legalNotice', component: LegalNoticeComponent },
   { path: 'imprint', component: ImprintComponent },
-  { path: 'menuSection', component: MenuSectionComponent },
+
 ];
