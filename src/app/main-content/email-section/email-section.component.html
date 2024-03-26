@@ -9,6 +9,9 @@
     <div class="input-value-check">
       <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.name.length > 0">
+           <div *ngIf="(contactData.name.length > 0)" (click)="inputInformation('name')">
+            <img src="./../../assets/img/email/checkbox/information-icon.png">
+          </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="!(contactData.name.length > 0)">
       <div *ngIf="!(contactData.name.length > 0)" (click)="inputInformation('name')">
@@ -21,6 +24,9 @@
     <div class="input-value-check">
       <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1">
+           <div *ngIf="(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (click)="inputInformation('email')">
+            <img src="./../../assets/img/email/checkbox/information-icon.png">
+          </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="!(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)">
       <div *ngIf="!(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (click)="inputInformation('email')">
@@ -33,6 +39,9 @@
     <div class="input-value-check">
       <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.message.length > 10">
+           <div *ngIf="(contactData.message.length > 10)" (click)="inputInformation('message')">
+            <img src="./../../assets/img/email/checkbox/information-icon.png">
+          </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="!(contactData.message.length > 10)">
       <div *ngIf="!(contactData.message.length > 10)" (click)="inputInformation('message')">
@@ -40,14 +49,30 @@
       </div>
     </div>
    </div>
+   <!-- <div class="input-checkbox-container">
+    <input [(ngModel)]="contactData.privacyPolice" name="privacyPolice" class="input-checkbox" type="checkbox" required>
+    <span>Please read and accept the <a href="legalNotice">privacy policy</a></span>
+    <div class="input-value-check">
+      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+           *ngIf="contactData.privacyPolice == true">
+      <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
+           *ngIf="(contactData.privacyPolice == false)">
+      <div *ngIf="(contactData.privacyPolice == false)" (click)="inputInformation('checkbox')">
+        <img src="./../../assets/img/email/checkbox/information-icon.png">
+      </div>
+    </div>
+   </div> -->
    <div class="input-checkbox-container">
     <div class="checkbox-span-container">
-      <input [(ngModel)]="contactData.privacyPolice" name="privacyPolice" class="input-checkbox" type="checkbox" required>
-      <span class="checkbox-span">I've read the <a href="legalNotice">privacy policy</a> and agree to the processing of my data as outlined.</span>
+      <input [(ngModel)]="contactData.privacyPolice" name="privacyPolice" class="input-checkbox" type="checkbox" placeholder="hello world" required>
+      <span class="checkbox-span">Please read and accept the  <a href="legalNotice">privacy policy</a></span>
     </div>
     <div class="input-value-check">
       <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.privacyPolice == true">
+      <div *ngIf="(contactData.privacyPolice == true)" (click)="inputInformation('checkbox')">
+        <img src="./../../assets/img/email/checkbox/information-icon.png">
+      </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="(contactData.privacyPolice == false)">
       <div *ngIf="(contactData.privacyPolice == false)" (click)="inputInformation('checkbox')">

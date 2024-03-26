@@ -2,10 +2,73 @@
   width: 100vw;
   height: 90vh;
   background-color: rgb(255,252,243);
+  overflow-y: hidden;
+  overflow-x: hidden;
 
   .imprint-content {
     background-color: rgb(255,252,243);
     padding-top: 10vh;
     padding-left: 5vw;
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 4000px){
+  .imprint-container {
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(255,252,243);
+
+    .imprint-content {
+      background-color: rgb(255,252,243);
+      padding-top: 10vh;
+      padding-left: 5vw;
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 3000px){
+  .imprint-container {
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(255,252,243);
+
+    .imprint-content {
+      background-color: rgb(255,252,243);
+      padding-top: 10vh;
+      padding-left: 5vw;
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 2500px){
+  .imprint-container {
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(255,252,243);
+
+    .imprint-content {
+      background-color: rgb(255,252,243);
+      padding-top: 10vh;
+      padding-left: 5vw;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  .imprint-container {
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(255,252,243);
+
+    .imprint-content {
+      background-color: rgb(255,252,243);
+      padding-top: 10vh;
+      padding-left: 5vw;
+      font-size: 12px;
+    }
   }
 }

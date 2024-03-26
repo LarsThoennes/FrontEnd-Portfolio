@@ -1,20 +1,20 @@
 .header-container {
   background-color: rgb(255,252,243);
-  height: 7vh;
+  height: 10vh;
   width: 100vw;
   position: fixed;
-  z-index: 9999;
+  z-index: 999999;
 
   .header-contents {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 5vw;
+    margin-left: 0vw;
     margin-right: 5vw;
-    padding-top: 2.5vh;
+    padding-top: 0vh;
 
     .header-logo {
-      height: 30px;
+      height: 50px;
     }
 
     button {
@@ -86,11 +86,11 @@
     .header-contents {
 
       .header-logo {
-        height: 100px;
+        height: 200px;
       }
 
       button {
-        transform: scale(2.5);
+        transform: scale(2);
       }
     }
   }
@@ -102,11 +102,11 @@
     .header-contents {
 
       .header-logo {
-        height: 70px;
+        height: 180px;
       }
 
       button {
-        transform: scale(2);
+        transform: scale(1.8);
       }
     }
   }
@@ -118,7 +118,7 @@
     .header-contents {
 
       .header-logo {
-        height: 60px;
+        height: 160px;
       }
 
       button {
@@ -134,11 +134,11 @@
     .header-contents {
 
       .header-logo {
-        height: 40px;
+        height: 140px;
       }
 
       button {
-        transform: scale(1.3);
+        transform: scale(1.5);
       }
     }
   }
@@ -150,11 +150,27 @@
     .header-contents {
 
       .header-logo {
-        height: 25px;
+        height: 80px;
       }
 
       button {
-        transform: scale(1);
+        transform: scale(0.8);
+      }
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  .header-container {
+
+    .header-contents {
+
+      .header-logo {
+        height: 60px;
+      }
+
+      button {
+        transform: scale(0.6);
       }
     }
   }
