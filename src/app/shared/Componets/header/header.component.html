@@ -1,11 +1,19 @@
 <div class="header-container">
   <div class="header-contents">
     <a href="/">
-      <img class="header-logo" src="./../../../../assets/img/header/logo/2 Kopie.jpeg">
+      <img class="header-logo" src="./../../../../assets/img/header/logo/logo1.jpeg">
     </a>
-    <button (click)="toggleMenu()">
-      <div id="button" class="burger-menu-icon"></div>
-    </button>
+    <div class="header-buttons">
+      <button class="menu-button" (click)="toggleMenu()">
+        <div id="button" class="burger-menu-icon"></div>
+      </button>
+      <button *ngIf="language === 'en'" class="language-button" (click)="changeLanguage()">
+        <img src="./../../../../assets/img/header/language-flag/england.jpeg">
+      </button>
+      <button *ngIf="language === 'de'" class="language-button" (click)="changeLanguage()">
+        <img src="./../../../../assets/img/header/language-flag/german.jpeg">
+      </button>
+    </div>
   </div>
 </div>
 

@@ -10,7 +10,7 @@
     </div>
   </div>
   <div class="mobile-button">
-    <a href="email">Send a message</a>
+    <a [href]="'#' + (linkTarget === 'target4' ? 'email' : '')">Send a message</a>
   </div>
   <div class="above-the-fold-scroll-down">
     <div class="left-email">

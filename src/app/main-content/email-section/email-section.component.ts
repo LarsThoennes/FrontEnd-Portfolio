@@ -4,16 +4,26 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FooterSectionComponent } from '../../shared/Componets/footer-section/footer-section.component';
 import { CommonModule } from '@angular/common';
+import { LanguageServiceComponent } from '../../shared/language-service/language-service.component';
+
 
 @Component({
   selector: 'app-email-section',
   standalone: true,
-  imports: [RouterModule, FormsModule, FooterSectionComponent, CommonModule],
+  imports: [RouterModule, FormsModule, FooterSectionComponent, CommonModule, LanguageServiceComponent],
   templateUrl: './email-section.component.html',
   styleUrl: './email-section.component.scss'
 })
 export class EmailSectionComponent{
   @Input() linkTarget: string = '';
+
+  language: string = 'en';
+
+  constructor(private languageService: LanguageServiceComponent) {}
+
+  ngOnInit() {
+    this.languageService.language$.subscribe(lang => (this.language = lang));
+  }
 
   http = inject(HttpClient);
 

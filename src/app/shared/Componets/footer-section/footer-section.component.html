@@ -1,7 +1,7 @@
 <div class="footer-section-container">
   <div class="footer-section-container-left">
     <div>
-      <img src="./../../assets/img/header/logo/logo (1).png">
+      <img src="./../../../../assets/img/footer/logo/logo.jpeg">
     </div>
     <div>
       <h2>© Lars Thönnes 2024</h2>
@@ -27,7 +27,8 @@
       </div>
     </div>
     <div class="footer-link">
-      <a href="imprint">Legal notice</a>
+      <a *ngIf="language === 'en'" href="imprint">Legal notice</a>
+      <a *ngIf="language === 'de'" href="imprint">Impressum</a>
       <div class="a-underline"></div>
     </div>
   </div>
@@ -52,13 +53,14 @@
     </div>
   </div>
   <div class="mobile-footer-logo">
-    <img src="./../../../../assets/img/header/logo/2.jpeg">
+    <img src="./../../../../assets/img/footer/logo/logo.jpeg">
   </div>
   <div class="mobile-footer-span">
     <span>Larsthoennes&#64;gmail.com</span>
   </div>
   <div class="mobile-footer-link">
-    <a href="imprint">Legal notice</a>
+    <a *ngIf="language === 'en'" href="imprint">Legal notice</a>
+    <a *ngIf="language === 'de'" href="imprint">Impressum</a>
     <div class="mobile-footer-a-underline"></div>
   </div>
 </div>

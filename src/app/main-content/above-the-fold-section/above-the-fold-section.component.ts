@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-above-the-fold-section',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './above-the-fold-section.component.html',
   styleUrl: './above-the-fold-section.component.scss'
 })
 export class AboveTheFoldSectionComponent {
-
+  @Input() linkTarget: string = '';
 }

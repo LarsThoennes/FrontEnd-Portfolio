@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="language === 'en'">
   <div class="email-section-container">
   <h1 id="email">Want to discuss a new project ?</h1>
   <span id="span">Say hello! let's discuss your ideas and make it happen</span>
@@ -49,22 +49,9 @@
       </div>
     </div>
    </div>
-   <!-- <div class="input-checkbox-container">
-    <input [(ngModel)]="contactData.privacyPolice" name="privacyPolice" class="input-checkbox" type="checkbox" required>
-    <span>Please read and accept the <a href="legalNotice">privacy policy</a></span>
-    <div class="input-value-check">
-      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
-           *ngIf="contactData.privacyPolice == true">
-      <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
-           *ngIf="(contactData.privacyPolice == false)">
-      <div *ngIf="(contactData.privacyPolice == false)" (click)="inputInformation('checkbox')">
-        <img src="./../../assets/img/email/checkbox/information-icon.png">
-      </div>
-    </div>
-   </div> -->
    <div class="input-checkbox-container">
     <div class="checkbox-span-container">
-      <input [(ngModel)]="contactData.privacyPolice" name="privacyPolice" class="input-checkbox" type="checkbox" placeholder="hello world" required>
+      <input [(ngModel)]="contactData.privacyPolice" name="privacyPolice" class="input-checkbox" type="checkbox" required>
       <span class="checkbox-span">Please read and accept the  <a href="legalNotice">privacy policy</a></span>
     </div>
     <div class="input-value-check">
@@ -111,6 +98,113 @@
 
   <div id="checkboxInformationContainer" class="d-none">
     <span>Please accept the Privacy Policy after reading it</span>
+  </div>
+
+  <app-footer-section></app-footer-section>
+</div>
+</div>
+
+<div>
+  <div *ngIf="language === 'de'" class="email-section-container">
+
+  <h1 id="email">Möchtest du über ein Projekt reden ?</h1>
+  <span id="span">Lass und über deine Ideen reden und sie umsetzten</span>
+
+  <form id="emailForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+   <div class="input-section">
+    <input [(ngModel)]="contactData.name" name="name" type="text" placeholder="Dein Name" required>
+    <div class="input-value-check">
+      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+           *ngIf="contactData.name.length > 0">
+           <div *ngIf="(contactData.name.length > 0)" (click)="inputInformation('name')">
+            <img src="./../../assets/img/email/checkbox/information-icon.png">
+          </div>
+      <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
+           *ngIf="!(contactData.name.length > 0)">
+      <div *ngIf="!(contactData.name.length > 0)" (click)="inputInformation('name')">
+        <img src="./../../assets/img/email/checkbox/information-icon.png">
+      </div>
+    </div>
+   </div>
+   <div class="input-section">
+    <input [(ngModel)]="contactData.email" name="email" type="email" placeholder="Deine email" required pattern=".+@.+">
+    <div class="input-value-check">
+      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+           *ngIf="contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1">
+           <div *ngIf="(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (click)="inputInformation('email')">
+            <img src="./../../assets/img/email/checkbox/information-icon.png">
+          </div>
+      <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
+           *ngIf="!(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)">
+      <div *ngIf="!(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (click)="inputInformation('email')">
+        <img src="./../../assets/img/email/checkbox/information-icon.png">
+      </div>
+    </div>
+   </div>
+   <div class="input-section">
+    <textarea [(ngModel)]="contactData.message" name="message" type="text" placeholder="Deine Nachricht" required></textarea>
+    <div class="input-value-check">
+      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+           *ngIf="contactData.message.length > 10">
+           <div *ngIf="(contactData.message.length > 10)" (click)="inputInformation('message')">
+            <img src="./../../assets/img/email/checkbox/information-icon.png">
+          </div>
+      <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
+           *ngIf="!(contactData.message.length > 10)">
+      <div *ngIf="!(contactData.message.length > 10)" (click)="inputInformation('message')">
+        <img src="./../../assets/img/email/checkbox/information-icon.png">
+      </div>
+    </div>
+   </div>
+   <div class="input-checkbox-container">
+    <div class="checkbox-span-container">
+      <input [(ngModel)]="contactData.privacyPolice" name="privacyPolice" class="input-checkbox" type="checkbox" required>
+      <span class="checkbox-span">Bitte lese und akzeptiere die <a href="legalNotice">privacy policy</a></span>
+    </div>
+    <div class="input-value-check">
+      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+           *ngIf="contactData.privacyPolice == true">
+      <div *ngIf="(contactData.privacyPolice == true)" (click)="inputInformation('checkbox')">
+        <img src="./../../assets/img/email/checkbox/information-icon.png">
+      </div>
+      <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
+           *ngIf="(contactData.privacyPolice == false)">
+      <div *ngIf="(contactData.privacyPolice == false)" (click)="inputInformation('checkbox')">
+        <img src="./../../assets/img/email/checkbox/information-icon.png">
+      </div>
+    </div>
+  </div>
+   <div class="submit-button-container">
+    <button (click)="sendMessage()" class="submit-button" type="submit" [disabled]="!contactForm.valid">
+      Nachricht senden
+    </button>
+   </div>
+  </form>
+
+  <div class="d-none" id="emailSentContainer">
+    <div class="email-sent-container-span">
+      <span>Ich habe deine Nachricht erhalten und melde mich bei dir.</span>
+      <span>DAnke für dein Vertrauen.</span>
+    </div>
+    <div class="email-sent-container-img">
+      <img src="./../../assets/img/email/email-send/icons8-new-message-48.png">
+    </div>
+  </div>
+
+  <div id="nameInformationContainer" class="d-none">
+    <span>Deine Name muss länger als 1 Zeichen sein</span>
+  </div>
+
+  <div id="emailInformationContainer" class="d-none">
+    <span>Deine Email muss vor und nach dem &#64; 4 Zeichen lang sein</span>
+  </div>
+
+  <div id="messageInformationContainer" class="d-none">
+    <span>Deine Nachricht muss läner als 10 Zeichen sein</span>
+  </div>
+
+  <div id="checkboxInformationContainer" class="d-none">
+    <span>Bitte akzeptiere die Datenschutzerklärung</span>
   </div>
 
   <app-footer-section></app-footer-section>

@@ -2,7 +2,7 @@
   <div class="about-me-headline">
     <h1>About me</h1>
     <div class="about-me-content">
-      <div class="about-me-information-text">
+      <div *ngIf="language === 'en'" class="about-me-information-text">
        <span class="about-me-information-text-first-span">My name is Lars and I am a 21-year-old resident of Duesseldorf, Germany.
         I recently completed my training as a Frontend Developer at the Developer Akademie, where I gained valuable skills and experience in HTML, CSS, JavaScript, and other relevant technologies.
         I believe my passion for frontend development and my dedication to continuous learning can contribute positively to your project.
@@ -14,6 +14,18 @@
         </a>
        </div>
       </div>
+      <div *ngIf="language === 'de'" class="about-me-information-text">
+         <span class="about-me-information-text-first-span">Mein Name ist Lars und ich bin 21 Jahre alt und wohne in Düsseldorf.
+           Ich habe kürzlich meine Ausbildung zum Frontend-Entwickler an der Developer Akademie abgeschlossen und dort wertvolle Kenntnisse und Erfahrungen in HTML, CSS, JavaScript und anderen relevanten Technologien erworben.
+           Ich glaube, dass meine Leidenschaft für die Frontend-Entwicklung und mein Engagement für kontinuierliches Lernen einen positiven Beitrag zu Ihrem Projekt leisten können.
+           </span>
+        <span class="about-me-information-text-second-span">Sollten Sie weitere Informationen benötigen, zögern Sie bitte nicht, mich über die unten angegebene E-Mail-Adresse zu kontaktieren.</span>
+        <div class="about-me-button">
+         <a [href]="'#' + (linkTarget === 'target4' ? 'email' : '')">
+           <button>Schreib mir</button>
+         </a>
+        </div>
+       </div>
       <div  class="about-me-portrait-container">
           <img class="about-me-portrait" src="./../../assets/img/about-me/portrait/portrait_1.JPG">
           <div class="overlay"></div>
