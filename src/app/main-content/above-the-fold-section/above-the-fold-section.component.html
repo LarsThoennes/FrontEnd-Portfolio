@@ -9,8 +9,11 @@
       <h3>Lars Thönnes</h3>
     </div>
   </div>
-  <div class="mobile-button">
-    <a [href]="'#' + (linkTarget === 'target4' ? 'email' : '')">Send a message</a>
+  <div *ngIf="language === 'en'" class="mobile-button">
+    <a [href]="'#email'">Send a message</a>
+  </div>
+  <div *ngIf="language === 'de'" class="mobile-button">
+    <a [href]="'#email'">Nachricht senden</a>
   </div>
   <div class="above-the-fold-scroll-down">
     <div class="left-email">

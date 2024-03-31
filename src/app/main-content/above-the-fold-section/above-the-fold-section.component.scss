@@ -73,6 +73,18 @@
   }
 }
 
+@keyframes shadow-pulse {
+  0% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+      box-shadow: 0 0 20px rgb(250,153,3, 0.6);
+  }
+  100% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
 
 @keyframes changeImages {
     9% { background-image: url('./../../../assets/img/above-the-folder/scroll-arrow/1.png'); }
@@ -207,13 +219,16 @@
       background-color: rgb(255,252,243);
       font-family: 'overpass-font';
 
-        &:hover{
-          cursor: pointer;
-          width: 60vw;
-          font-weight: bold;
-          border: 8px solid black;
-          background-color: rgb(208, 205, 196);
-        }
+      &:hover {
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
+      }
     }
 
     .above-the-fold-scroll-down {
@@ -278,7 +293,14 @@
       height: 8vh;
 
       &:hover {
-        width: 65vw;
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
       }
     }
 
@@ -546,12 +568,16 @@
       background-color: rgb(255,252,243);
       font-family: 'overpass-font';
 
-        &:hover{
+        &:hover {
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
           cursor: pointer;
-          width: 70vw;
-          font-weight: bold;
           border: 6px solid black;
-          background-color: rgb(208, 205, 196);
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
     }
 
@@ -582,10 +608,16 @@
     .mobile-button {
       width: 70vw;
 
-        &:hover{
-          cursor: pointer;
-          width: 80vw;
-        }
+      &:hover {
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
+      }
     }
   }
 }
@@ -611,10 +643,16 @@
     .mobile-button {
       width: 70vw;
 
-        &:hover{
-          cursor: pointer;
-          width: 80vw;
-        }
+      &:hover {
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
+      }
     }
   }
 }
@@ -641,10 +679,16 @@
       width: 70vw;
       height: 5vh;
 
-        &:hover{
-          cursor: pointer;
-          width: 80vw;
-        }
+      &:hover {
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
+      }
     }
 
     .above-the-fold-scroll-down {
@@ -821,10 +865,16 @@
       width: 70vw;
       height: 5vh;
 
-        &:hover{
-          cursor: pointer;
-          width: 80vw;
-        }
+      &:hover {
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
+      }
     }
 
     .above-the-fold-scroll-down {
@@ -851,10 +901,16 @@
       width: 70vw;
       height: 5vh;
 
-        &:hover{
-          cursor: pointer;
-          width: 80vw;
-        }
+      &:hover {
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
+      }
     }
 
     .above-the-fold-scroll-down {
@@ -881,10 +937,16 @@
       width: 70vw;
       height: 5vh;
 
-        &:hover{
-          cursor: pointer;
-          width: 80vw;
-        }
+      &:hover {
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
+      }
     }
 
     .above-the-fold-scroll-down {
@@ -926,10 +988,16 @@
       height: 5vh;
       font-size: 35px;
 
-        &:hover{
-          cursor: pointer;
-          width: 80vw;
-        }
+      &:hover {
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
+      }
     }
 
     .above-the-fold-scroll-down {
@@ -960,10 +1028,16 @@
       height: 5vh;
       font-size: 30px;
 
-        &:hover{
-          cursor: pointer;
-          width: 80vw;
-        }
+      &:hover {
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
+      }
     }
   }
 }
@@ -987,10 +1061,16 @@
       height: 5vh;
       font-size: 30px;
 
-        &:hover{
-          cursor: pointer;
-          width: 80vw;
-        }
+      &:hover {
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
+      }
     }
 
     .above-the-fold-scroll-down {
@@ -1422,10 +1502,13 @@
 
         &:hover{
           cursor: pointer;
-          width: 60vw;
-          font-weight: bold;
           border: 8px solid black;
-          background-color: rgb(208, 205, 196);
+          animation: shadow-pulse 1s ease-in-out infinite;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
     }
     .above-the-fold-scroll-down {
@@ -1536,9 +1619,17 @@
       font-size: 30px;
       border: 4px solid black;
 
-      &:hover {
+      &:hover{
+        cursor: pointer;
         border: 4px solid black;
+        animation: shadow-pulse 1s ease-in-out infinite;
       }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
+      }
+
     }
 
     .above-the-fold-scroll-down {
@@ -1566,8 +1657,15 @@
       border: 4px solid black;
       height: 5vh;
 
-      &:hover {
+      &:hover{
+        cursor: pointer;
         border: 4px solid black;
+        animation: shadow-pulse 1s ease-in-out infinite;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
       }
     }
 
@@ -1595,8 +1693,14 @@
     .mobile-button {
       width: 50vw;
 
-      &:hover {
-        width: 65vw;
+      &:hover{
+        cursor: pointer;
+        animation: shadow-pulse 1s ease-in-out infinite;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
       }
     }
   }
@@ -1638,8 +1742,14 @@
     .mobile-button {
       width: 60vw;
 
-      &:hover {
-        width: 75vw;
+      &:hover{
+        cursor: pointer;
+        animation: shadow-pulse 1s ease-in-out infinite;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
       }
     }
 
@@ -2544,10 +2654,12 @@
 
         &:hover{
           cursor: pointer;
-          width: 60vw;
-          font-weight: bold;
-          border: 4px solid black;
-          background-color: rgb(208, 205, 196);
+          animation: shadow-pulse 1s ease-in-out infinite;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
     }
 
@@ -2631,8 +2743,14 @@
       font-size: 25px;
       width: 50vw;
 
-      &:hover {
-        width: 60vw;
+      &:hover{
+        cursor: pointer;
+        animation: shadow-pulse 1s ease-in-out infinite;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
       }
     }
 
@@ -2675,8 +2793,14 @@
     .mobile-button {
       width: 60vw;
 
-      &:hover {
-        width: 70vw;
+      &:hover{
+        cursor: pointer;
+        animation: shadow-pulse 1s ease-in-out infinite;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
       }
     }
 
@@ -3626,8 +3750,14 @@
     .mobile-button {
       width: 50vw;
 
-      &:hover {
-      width: 60vw;
+      &:hover{
+        cursor: pointer;
+        animation: shadow-pulse 1s ease-in-out infinite;
+      }
+
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
       }
     }
 

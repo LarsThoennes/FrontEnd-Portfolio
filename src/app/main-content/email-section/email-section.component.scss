@@ -167,15 +167,14 @@ a {
       font-size: 25px;
 
       &:hover {
+        animation: shadow-pulse 1s ease-in-out infinite;
+        background-color: rgba(128, 128, 128, 0.129);
         cursor: pointer;
-        width: 14vw;
-        animation: submit-button-hover 0.2s ease-in-out;
+      }
 
-        &:active {
-          background-color: white;
-          color: black;
-          border: none;
-        }
+      &:active {
+        background-color: rgb(250,153,3, 0.9);
+        border-color: rgb(255, 255, 255);
       }
     }
 
@@ -239,6 +238,18 @@ a {
       padding-left: 15px;
       padding-right: 15px;
     }
+  }
+}
+
+@keyframes shadow-pulse {
+  0% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+      box-shadow: 0 0 50px rgb(250,153,3, 0.6);
+  }
+  100% {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -390,7 +401,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -544,7 +562,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -698,7 +723,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -852,7 +884,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -1006,7 +1045,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -1160,7 +1206,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -1315,7 +1368,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -1470,7 +1530,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -1625,7 +1692,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -1780,7 +1854,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -1935,7 +2016,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 50vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -2089,7 +2177,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -2243,7 +2338,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -2397,7 +2499,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -2551,7 +2660,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -2705,7 +2821,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -2859,7 +2982,14 @@ a {
         font-size: 40px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -3013,7 +3143,14 @@ a {
         font-size: 40px;
 
         &:hover {
-          width: 35vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -3167,8 +3304,15 @@ a {
          font-size: 40px;
 
          &:hover {
-           width: 35vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -3322,8 +3466,15 @@ a {
          font-size: 40px;
 
          &:hover {
-           width: 35vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -3477,8 +3628,15 @@ a {
          font-size: 40px;
 
          &:hover {
-           width: 45vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -3632,8 +3790,15 @@ a {
          font-size: 40px;
 
          &:hover {
-           width: 45vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -3787,8 +3952,15 @@ a {
          font-size: 40px;
 
          &:hover {
-           width: 45vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -3942,8 +4114,15 @@ a {
          font-size: 30px;
 
          &:hover {
-           width: 45vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -4097,8 +4276,15 @@ a {
          font-size: 30px;
 
          &:hover {
-           width: 45vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -4252,8 +4438,15 @@ a {
          font-size: 30px;
 
          &:hover {
-           width: 45vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -4408,8 +4601,15 @@ a {
          font-size: 25px;
 
          &:hover {
-           width: 45vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -4564,8 +4764,15 @@ a {
          font-size: 20px;
 
          &:hover {
-           width: 45vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -4720,8 +4927,15 @@ a {
          font-size: 20px;
 
          &:hover {
-           width: 45vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -4876,8 +5090,15 @@ a {
          font-size: 16px;
 
          &:hover {
-           width: 45vw;
-         }
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
+        }
        }
 
        .submit-button:disabled {
@@ -5030,7 +5251,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -5184,7 +5412,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -5339,7 +5574,14 @@ a {
         font-size: 40px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -5493,7 +5735,14 @@ a {
         font-size: 40px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -5648,7 +5897,14 @@ a {
         font-size: 35px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -5805,7 +6061,14 @@ a {
         font-size: 35px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -5961,7 +6224,14 @@ a {
         font-size: 35px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -6117,7 +6387,14 @@ a {
         font-size: 35px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -6273,7 +6550,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -6429,7 +6713,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -6585,7 +6876,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -6741,7 +7039,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -6897,7 +7202,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 55vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -7053,7 +7365,14 @@ a {
         font-size: 25px;
 
         &:hover {
-          width: 55vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -7209,7 +7528,14 @@ a {
         font-size: 20px;
 
         &:hover {
-          width: 55vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -7365,7 +7691,14 @@ a {
         font-size: 16px;
 
         &:hover {
-          width: 55vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -7521,7 +7854,14 @@ a {
         font-size: 16px;
 
         &:hover {
-          width: 55vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -7675,7 +8015,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -7829,7 +8176,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -7983,7 +8337,14 @@ a {
         font-size: 40px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -8137,7 +8498,14 @@ a {
         font-size: 35px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -8291,7 +8659,14 @@ a {
         font-size: 35px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -8447,7 +8822,14 @@ a {
         font-size: 25px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -8603,7 +8985,14 @@ a {
         font-size: 25px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -8759,7 +9148,14 @@ a {
         font-size: 25px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -8915,7 +9311,14 @@ a {
         font-size: 25px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -9071,7 +9474,14 @@ a {
         font-size: 25px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -9227,7 +9637,14 @@ a {
         font-size: 25px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -9383,7 +9800,14 @@ a {
         font-size: 20px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -9539,7 +9963,14 @@ a {
         font-size: 20px;
 
         &:hover {
-          width: 50vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -9695,7 +10126,14 @@ a {
         font-size: 15px;
 
         &:hover {
-          width: 50vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -9849,7 +10287,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -10004,7 +10449,14 @@ a {
         font-size: 50px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -10159,7 +10611,14 @@ a {
         font-size: 40px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -10314,7 +10773,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -10469,7 +10935,14 @@ a {
         font-size: 25px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -10624,7 +11097,14 @@ a {
         font-size: 20px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -10779,7 +11259,14 @@ a {
         font-size: 15px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -10934,7 +11421,14 @@ a {
         font-size: 15px;
 
         &:hover {
-          width: 35vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -11089,7 +11583,14 @@ a {
         font-size: 15px;
 
         &:hover {
-          width: 35vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -11244,7 +11745,14 @@ a {
         font-size: 15px;
 
         &:hover {
-          width: 45vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -11399,7 +11907,14 @@ a {
         font-size: 15px;
 
         &:hover {
-          width: 45vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -11554,7 +12069,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -11709,7 +12231,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -11864,7 +12393,14 @@ a {
         font-size: 25px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -12019,7 +12555,14 @@ a {
         font-size: 20px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -12174,7 +12717,14 @@ a {
         font-size: 16px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -12329,7 +12879,14 @@ a {
         font-size: 16px;
 
         &:hover {
-          width: 35vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -12484,7 +13041,14 @@ a {
         font-size: 16px;
 
         &:hover {
-          width: 35vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -12639,7 +13203,14 @@ a {
         font-size: 14px;
 
         &:hover {
-          width: 35vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -12794,7 +13365,14 @@ a {
         font-size: 12px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -12949,7 +13527,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3, 0.9);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -13104,7 +13689,14 @@ a {
         font-size: 16px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -13259,7 +13851,14 @@ a {
         font-size: 16px;
 
         &:hover {
-          width: 35vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -13414,7 +14013,14 @@ a {
         font-size: 16px;
 
         &:hover {
-          width: 35vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -13569,7 +14175,14 @@ a {
         font-size: 14px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -13724,7 +14337,14 @@ a {
         font-size: 12px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -13879,7 +14499,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -14034,7 +14661,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -14189,7 +14823,14 @@ a {
         font-size: 20px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -14344,7 +14985,14 @@ a {
         font-size: 20px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -14499,7 +15147,14 @@ a {
         font-size: 20px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -14654,7 +15309,14 @@ a {
         font-size: 20px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -14809,7 +15471,14 @@ a {
         font-size: 12px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -14964,7 +15633,14 @@ a {
         font-size: 12px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -15119,7 +15795,14 @@ a {
         font-size: 30px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -15274,7 +15957,14 @@ a {
         font-size: 20px;
 
         &:hover {
-          width: 22vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -15429,7 +16119,14 @@ a {
         font-size: 16px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -15584,7 +16281,14 @@ a {
         font-size: 14px;
 
         &:hover {
-          width: 30vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -15739,7 +16443,14 @@ a {
         font-size: 14px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 
@@ -15894,7 +16605,14 @@ a {
         font-size: 14px;
 
         &:hover {
-          width: 40vw;
+          animation: shadow-pulse 1s ease-in-out infinite;
+          background-color: rgba(128, 128, 128, 0.129);
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: rgb(250,153,3);
+          border-color: rgb(255, 255, 255);
         }
       }
 

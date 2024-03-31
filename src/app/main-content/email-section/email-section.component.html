@@ -1,6 +1,6 @@
-<div *ngIf="language === 'en'">
+<div id="email" *ngIf="language === 'en'">
   <div class="email-section-container">
-  <h1 id="email">Want to discuss a new project ?</h1>
+  <h1>Want to discuss a new project ?</h1>
   <span id="span">Say hello! let's discuss your ideas and make it happen</span>
 
   <form id="emailForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
@@ -105,9 +105,9 @@
 </div>
 
 <div>
-  <div *ngIf="language === 'de'" class="email-section-container">
+  <div id="email" *ngIf="language === 'de'" class="email-section-container">
 
-  <h1 id="email">Möchtest du über ein Projekt reden ?</h1>
+  <h1>Möchtest du über ein Projekt reden ?</h1>
   <span id="span">Lass und über deine Ideen reden und sie umsetzten</span>
 
   <form id="emailForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">

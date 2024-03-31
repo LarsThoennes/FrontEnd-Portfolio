@@ -16,8 +16,8 @@ export class SayHiMenuSectionComponent implements OnInit {
   constructor(private languageService: LanguageServiceComponent) { }
 
   changeLanguage() {
-    const newLanguage = this.language === 'en' ? 'de' : 'en';
-    this.languageService.setLanguage(newLanguage);
+    this.language = this.language === 'en' ? 'de' : 'en';
+    this.languageService.setLanguage(this.language);
   }
 
   ngOnInit(): void {

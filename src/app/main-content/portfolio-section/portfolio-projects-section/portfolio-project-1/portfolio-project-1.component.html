@@ -1,17 +1,30 @@
 <div class="project-container">
-  <div data-aos="fade-right" data-aos-easing="ease-in-out" class="project-content-image-container">
-    <div class="overlay-arrow"></div>
-    <div class="overlay"></div>
-    <img class="project-content-image" src="./../../../../../assets/img/portfolio-projects/projects-1/destop-view/Bildschirmfoto 2024-03-21 um 00.00.44.png">
-    <div class="project-content-description">
+  <div class="image-overlay-container">
+    <img src="./../../../../../assets/img/portfolio-projects/projects-1/destop-view/Bildschirmfoto 2024-03-21 um 00.00.44.png">
+    <div class="overlay">
+     <div class="overlay-arrow">
+      <img src="./../../../../../assets/img/portfolio-projects/animation-arrow/Group 5.png">
+     </div>
+    </div>
+  </div>
+  <div class="project-content-information">
+    <div>
       <h1>Join</h1>
-      <span class="project-applications">JavaScript | HTML | CSS</span>
+    <div *ngIf="language === 'en'" class="project-container-description">
+      <span class="span1">JavaScript | HTML | CSS</span>
       <span class="project-explanation">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.</span>
+    </div>
+    <div *ngIf="language === 'de'" class="project-container-description">
+      <span class="span1">JavaScript | HTML | CSS</span>
+      <span class="project-explanation">Vom Kanban-System inspirierter Aufgabenmanager. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen.</span>
+    </div>
+    <div class="project-container-buttons">
       <button (click)="openJoinGithubURL()">Github</button>
       <button (click)="openJoinLiveTestURL()">Live Test</button>
     </div>
-   </div>
-  <div data-aos="fade-left" data-aos-easing="ease-in-out">
-    <h1 class="project-counter">01/05</h1>
+    </div>
+    <div class="project-counter">
+      <span>01 / 03</span>
+    </div>
   </div>
 </div>
