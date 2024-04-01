@@ -69,19 +69,12 @@
     padding-bottom: 2vh;
 
     .language-button-container {
-      button {
-        background-color: transparent;
-        border: none;
-
-        img {
-          height: 30px;
-          width: auto;
-          cursor: pointer;
-        }
-      }
+      display: none;
     }
 
     .single-app-icon-container {
+      display: flex;
+      align-items: center;
 
       img {
         width: 90px;
@@ -424,14 +417,16 @@
 
       .language-button-container {
         display: block;
+        padding-top: 1vh;
 
         button {
           background-color: transparent;
           border: none;
 
           img {
-            height: 30px;
+            height: 20px;
             width: auto;
+            cursor: pointer;
           }
         }
       }
@@ -516,9 +511,22 @@
       display: flex;
       flex-direction: row;
       padding-right: 2vw;
-      gap: 30px;
+      gap: 20px;
       padding-right: 5vw;
       padding-bottom: 0;
+
+      .language-button-container {
+        display: block;
+        padding-top: 1vh;
+
+        .language-button {
+
+          img {
+            height: 15px;
+            width: auto;
+          }
+        }
+      }
 
       .single-app-icon-container {
 

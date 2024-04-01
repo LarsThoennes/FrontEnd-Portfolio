@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MenuSectionComponent } from './menu-section/menu-section.component';
 import { LanguageServiceComponent } from '../../language-service/language-service.component';
+import { Subscription } from 'rxjs';
 
 
 @Component({
@@ -13,17 +14,27 @@ import { LanguageServiceComponent } from '../../language-service/language-servic
 })
 export class HeaderComponent implements OnInit {
   showMenu = false;
-  language: string = 'en';
+  language: string = '';
+  languageSubscription: Subscription | undefined;
 
   constructor(private languageService: LanguageServiceComponent) { }
+
+  ngOnInit() {
+    this.languageSubscription = this.languageService.language$.subscribe(language => {
+      this.language = language;
+    });
+  }
+
+  ngOnDestroy() {
+    if (this.languageSubscription) {
+      this.languageSubscription.unsubscribe();
+    }
+  }
 
   changeLanguage() {
     this.language = this.language === 'en' ? 'de' : 'en';
     this.languageService.setLanguage(this.language);
   }
-
-  ngOnInit() { }
-
   toggleMenu() {
     this.showMenu = !this.showMenu;
     const button = document.querySelector('#button')!;

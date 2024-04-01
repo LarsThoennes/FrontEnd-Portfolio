@@ -35,10 +35,10 @@ export class EmailSectionComponent{
     privacyPolice: false,
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://lars-thönnes.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -70,11 +70,13 @@ export class EmailSectionComponent{
   sendMessage() {
     const emailSection = document.querySelector('#emailForm')!;
     const sendEmail = document.querySelector('#emailSentContainer')!;
-    const email = document.querySelector('#email')!;
-    const span = document.querySelector('#span')!;
+    const emailForm = document.querySelector('#emailForm')!;
+    const span1 = document.querySelector('#span1')!;
+    const span2 = document.querySelector('#span2')!;
     emailSection.classList.add('d-none');
-    email.classList.add('d-none');
-    span.classList.add('d-none');
+    emailForm.classList.add('d-none');
+    span1.classList.add('d-none');
+    span2.classList.add('d-none');
     sendEmail.classList.remove('d-none');
     sendEmail.classList.add('email-sent-container');
   }

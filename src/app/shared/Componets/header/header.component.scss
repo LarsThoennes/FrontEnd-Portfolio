@@ -105,17 +105,17 @@
 }
 
 
-// @media screen and (max-width: 1200px) {
-//   .header-container {
+@media screen and (max-width: 1200px) {
+  .header-container {
 
-//     .header-contents {
+    .header-contents {
 
-//       .header-buttons {
+      .header-buttons {
 
-//         .language-button {
-//           display: none;
-//         }
-//       }
-//     }
-//   }
-// }
+        .language-button {
+          display: none;
+        }
+      }
+    }
+  }
+}
