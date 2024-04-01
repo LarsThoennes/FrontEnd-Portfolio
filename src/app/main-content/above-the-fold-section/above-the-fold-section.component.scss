@@ -73,6 +73,7 @@
   }
 }
 
+
 @keyframes shadow-pulse {
   0% {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -1491,7 +1492,7 @@
       align-items: center;
       justify-content: center;
       margin-top: 0vh;
-      width: 40vw;
+      width: 50vw;
       height: 7vh;
       margin-top: 5vh;
       border: 8px solid black;
@@ -1568,7 +1569,7 @@
     }
 
     .mobile-button {
-      font-size: 50px;
+      font-size: 40px;
     }
 
     .above-the-fold-scroll-down {
@@ -1592,7 +1593,8 @@
     }
 
     .mobile-button {
-      font-size: 40px;
+      font-size: 30px;
+      height: 15vh;
     }
 
     .above-the-fold-scroll-down {
@@ -1789,7 +1791,6 @@
         font-size: 70px;
       }
     }
-
     .above-the-fold-scroll-down {
       padding-top: 0vh;
     }
@@ -2457,7 +2458,7 @@
     }
 
     .above-the-fold-scroll-down {
-      padding-top: 20vh;
+      padding-top: 10vh;
     }
   }
 }
@@ -2477,7 +2478,7 @@
     }
 
     .above-the-fold-scroll-down {
-      padding-top: 25vh;
+      padding-top: 18vh;
     }
   }
 }
@@ -2792,6 +2793,7 @@
 
     .mobile-button {
       width: 60vw;
+      font-size: 20px;
 
       &:hover{
         cursor: pointer;
@@ -3749,6 +3751,7 @@
 
     .mobile-button {
       width: 50vw;
+      font-size: 20px;
 
       &:hover{
         cursor: pointer;
@@ -3866,6 +3869,7 @@
 
     .mobile-button {
       font-size: 18px;
+      width: 55vw;
     }
   }
 }
@@ -3990,6 +3994,12 @@
       h3 {
         font-size: 20px;
       }
+    }
+
+    .mobile-button {
+      width: 50vw;
+      font-size: 15px;
+      border: 2px solid black;
     }
 
     .above-the-fold-scroll-down {

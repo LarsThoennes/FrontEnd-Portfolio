@@ -38,7 +38,7 @@ export class EmailSectionComponent{
   mailTest = false;
 
   post = {
-    endPoint: 'https://lars-thönnes.de/sendMail.php',
+    endPoint: 'https://lars-thönnes.de/src/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
