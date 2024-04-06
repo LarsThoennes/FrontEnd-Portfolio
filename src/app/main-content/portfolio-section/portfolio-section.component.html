@@ -1,16 +1,18 @@
-<div id="portfolio" class="portfolio-section-container">
-  <div class="portfolio-section-headline">
-    <h1>Portfolio</h1>
-    <div *ngIf="language === 'en'" class="portfolio-section-span">
-      <span>Explore a selection of my work here  </span>
-      <span id="span-distance"> - </span>
-      <span>Interact with projects to see my skills in action.</span>
+<div class="parent-container-project">
+  <div id="portfolio" class="portfolio-section-container">
+    <div class="portfolio-section-headline">
+      <h1>Portfolio</h1>
+      <div *ngIf="language === 'en'" class="portfolio-section-span">
+        <span>Explore a selection of my work here  </span>
+        <span id="span-distance"> - </span>
+        <span>Interact with projects to see my skills in action.</span>
+      </div>
+      <div *ngIf="language === 'de'" class="portfolio-section-span">
+        <span>Entdecke einige meiner Projekte</span>
+        <span id="span-distance"> - </span>
+        <span>Teste meine Projekte um meine Skills zu prüfen.</span>
+      </div>
     </div>
-    <div *ngIf="language === 'de'" class="portfolio-section-span">
-      <span>Entdecke einige meiner Projekte</span>
-      <span id="span-distance"> - </span>
-      <span>Teste meine Projekte um meine Skills zu prüfen.</span>
-    </div>
+    <app-portfolio-projects-section></app-portfolio-projects-section>
   </div>
-  <app-portfolio-projects-section></app-portfolio-projects-section>
 </div>

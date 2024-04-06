@@ -1,26 +1,35 @@
-
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LanguageServiceComponent } from '../shared/language-service/language-service.component';
+import { LanguageService } from '../language.service';
 import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-menu-section-footer',
   standalone: true,
-  imports: [CommonModule, LanguageServiceComponent, RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './menu-section-footer.component.html',
   styleUrl: './menu-section-footer.component.scss'
 })
+
 export class MenuSectionFooterComponent {
-  language: string = 'en';
+  language: string;
 
-  constructor(private languageService: LanguageServiceComponent) { }
-
-  changeLanguage() {
-    this.language = this.language === 'en' ? 'de' : 'en';
-    this.languageService.setLanguage(this.language);
+  constructor(private languageService: LanguageService) {
+    this.language = this.languageService.getCurrentLanguage();
   }
 
-  ngOnInit(): void { }
+  changeLanguage(lang: string): void {
+    this.languageService.setCurrentLanguage(lang);
+    this.language = lang;
+  }
+openGithubProfile() {
+  let pageURL = 'https://github.com/LarsThoennes';
+  window.open(pageURL, '_blank');
+}
+
+openLinkedinProfile() {
+  let pageURL = 'https://www.linkedin.com/in/lars-th%C3%B6nnes-2b97742b3/';
+  window.open(pageURL, '_blank');
+}
 }

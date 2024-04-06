@@ -1,40 +1,26 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MenuSectionComponent } from './menu-section/menu-section.component';
-import { LanguageServiceComponent } from '../../language-service/language-service.component';
-import { Subscription } from 'rxjs';
+import { LanguageService } from '../../../language.service';
 
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MenuSectionComponent, CommonModule, LanguageServiceComponent],
+  imports: [MenuSectionComponent, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent implements OnInit {
-  showMenu = false;
-  language: string = '';
-  languageSubscription: Subscription | undefined;
 
-  constructor(private languageService: LanguageServiceComponent) { }
 
-  ngOnInit() {
-    this.languageSubscription = this.languageService.language$.subscribe(language => {
-      this.language = language;
-    });
+export class HeaderComponent {
+  showMenu: boolean = false;
+  language: string;
+
+  constructor(private languageService: LanguageService) {
+    this.language = this.languageService.getCurrentLanguage();
   }
 
-  ngOnDestroy() {
-    if (this.languageSubscription) {
-      this.languageSubscription.unsubscribe();
-    }
-  }
-
-  changeLanguage() {
-    this.language = this.language === 'en' ? 'de' : 'en';
-    this.languageService.setLanguage(this.language);
-  }
   toggleMenu() {
     this.showMenu = !this.showMenu;
     const button = document.querySelector('#button')!;
@@ -49,5 +35,9 @@ export class HeaderComponent implements OnInit {
       body.classList.remove('overflow-hidden');
     }
   }
-}
 
+  changeLanguage(lang: string): void {
+    this.languageService.setCurrentLanguage(lang);
+    this.language = lang;
+  }
+}

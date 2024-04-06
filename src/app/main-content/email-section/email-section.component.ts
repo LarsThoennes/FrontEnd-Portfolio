@@ -4,13 +4,13 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { FooterSectionComponent } from '../../shared/Componets/footer-section/footer-section.component';
 import { CommonModule } from '@angular/common';
-import { LanguageServiceComponent } from '../../shared/language-service/language-service.component';
+import { LanguageService } from '../../language.service';
 
 
 @Component({
   selector: 'app-email-section',
   standalone: true,
-  imports: [RouterModule, FormsModule, FooterSectionComponent, CommonModule, LanguageServiceComponent],
+  imports: [RouterModule, FormsModule, FooterSectionComponent, CommonModule],
   templateUrl: './email-section.component.html',
   styleUrl: './email-section.component.scss'
 })
@@ -19,7 +19,7 @@ export class EmailSectionComponent{
 
   language: string = 'en';
 
-  constructor(private languageService: LanguageServiceComponent) {}
+  constructor(private languageService: LanguageService) {}
 
   ngOnInit() {
     this.languageService.language$.subscribe(lang => (this.language = lang));
@@ -38,7 +38,7 @@ export class EmailSectionComponent{
   mailTest = false;
 
   post = {
-    endPoint: 'https://lars-thönnes.de/src/sendMail.php',
+    endPoint: 'https://lars-thönnes.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -136,5 +136,42 @@ export class EmailSectionComponent{
         checkboxInformation.classList.remove('information-container');
       }, 6000);
     }
+    }
+
+    hideInformation(id: string) {
+      const name = 'name';
+      const email = 'email';
+      const message = 'message';
+      const checkbox = 'checkbox';
+
+      const nameInformation = document.querySelector('#nameInformationContainer')!;
+      const emailInformation = document.querySelector('#emailInformationContainer')!;
+      const messageInformation = document.querySelector('#messageInformationContainer')!;
+      const checkboxInformation = document.querySelector('#checkboxInformationContainer')!;
+
+      nameInformation.classList.add('d-none');
+      emailInformation.classList.add('d-none');
+      messageInformation.classList.add('d-none');
+      checkboxInformation.classList.add('d-none');
+
+      if(id == name) {
+          nameInformation.classList.add('d-none');
+          nameInformation.classList.remove('information-container');
+      }
+
+      if(id == email) {
+         emailInformation.classList.add('d-none');
+         emailInformation.classList.remove('information-container');
+      }
+
+       if(id == message) {
+            messageInformation.classList.add('d-none');
+           messageInformation.classList.remove('information-container');
+       }
+
+       if(id == checkbox) {
+          checkboxInformation.classList.add('d-none');
+          checkboxInformation.classList.remove('information-container');
+      }
     }
   }

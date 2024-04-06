@@ -1,7 +1,7 @@
+import { LanguageService } from '../language.service';
 import { Component } from '@angular/core';
 import { MenuSectionFooterComponent } from '../menu-section-footer/menu-section-footer.component';
 import { CommonModule } from '@angular/common';
-import { LanguageServiceComponent } from '../shared/language-service/language-service.component';
 
 @Component({
   selector: 'app-imprint',
@@ -13,7 +13,7 @@ import { LanguageServiceComponent } from '../shared/language-service/language-se
 export class ImprintComponent {
   language: string = 'en';
 
-  constructor(private languageService: LanguageServiceComponent) {}
+  constructor(private languageService: LanguageService) {}
 
   ngOnInit() {
     this.languageService.language$.subscribe(lang => (this.language = lang));

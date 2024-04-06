@@ -1,39 +1,8 @@
 <div id="sayHi">
   <div class="say-hi-section-container">
-    <div>
+    <div class="say-hi-headline">
       <h1>Say Hi!</h1>
     </div>
   </div>
-  <div class="menu-section-footer-container">
-    <div>
-      <h2>© Lars Thönnes 2024</h2>
-    </div>
-    <div class="footer-section-container-right">
-      <div class="app-icon-container">
-        <div class="language-button-container">
-          <button *ngIf="language === 'en'" class="language-button" (click)="changeLanguage()">
-            <img src="./../../assets/img/header/language-flag/england.jpeg">
-          </button>
-          <button *ngIf="language === 'de'" class="language-button" (click)="changeLanguage()">
-            <img src="./../../assets/img/header/language-flag/german.jpeg">
-          </button>
-        </div>
-        <div class="single-app-icon-container">
-          <a  href="mailto:larsthoennes@gmail.com">
-            <img src="-/../../../assets/img/footer/app-icons/Email button s3.png">
-          </a>
-        </div>
-        <div class="single-app-icon-container">
-          <a href="https://github.com/LarsThoennes">
-            <img src="-/../../../assets/img/footer/app-icons/Github button s3.png">
-          </a>
-        </div>
-        <div class="single-app-icon-container">
-          <a href="https://www.linkedin.com/in/lars-th%C3%B6nnes-2b97742b3/">
-            <img src="-/../../../assets/img/footer/app-icons/Linkedin button s3.png">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <app-menu-section-footer></app-menu-section-footer>
 </div>

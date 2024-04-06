@@ -19,7 +19,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $message = $params->message;
             $privacyPolice = $params->privacyPolice;
 
-            $recipient = 'larsthoennes@gmail.com';
+            // $recipient = 'larsthoennes@gmail.com';!!!!!!!!!!!!!!!!!!!!
             $subject = "Contact From <$email>";
             $message = "From:" . $name . "<br>" . $message ;
 

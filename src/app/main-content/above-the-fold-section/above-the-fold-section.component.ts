@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { LanguageServiceComponent } from '../../shared/language-service/language-service.component';
+import { LanguageService } from '../../language.service';
 
 @Component({
   selector: 'app-above-the-fold-section',
   standalone: true,
-  imports: [RouterModule, CommonModule, LanguageServiceComponent],
+  imports: [RouterModule, CommonModule],
   templateUrl: './above-the-fold-section.component.html',
   styleUrl: './above-the-fold-section.component.scss'
 })
@@ -15,7 +15,7 @@ export class AboveTheFoldSectionComponent {
 
   language: string = 'en';
 
-  constructor(private languageService: LanguageServiceComponent) {}
+  constructor(private languageService: LanguageService) {}
 
   ngOnInit() {
     this.languageService.language$.subscribe(lang => (this.language = lang));

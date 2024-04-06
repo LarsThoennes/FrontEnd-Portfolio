@@ -7,14 +7,14 @@
    <div class="input-section">
     <input [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name" required>
     <div class="input-value-check">
-      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+      <img src="./../../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.name.length > 0">
-           <div *ngIf="(contactData.name.length > 0)" (click)="inputInformation('name')">
+           <div *ngIf="(contactData.name.length > 0)" (mouseenter)="inputInformation('name')" (mouseleave)="hideInformation('name')">
             <img src="./../../assets/img/email/checkbox/information-icon.png">
           </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="!(contactData.name.length > 0)">
-      <div *ngIf="!(contactData.name.length > 0)" (click)="inputInformation('name')">
+      <div *ngIf="!(contactData.name.length > 0)" (mouseenter)="inputInformation('name')" (mouseleave)="hideInformation('name')">
         <img src="./../../assets/img/email/checkbox/information-icon.png">
       </div>
     </div>
@@ -22,14 +22,14 @@
    <div class="input-section">
     <input [(ngModel)]="contactData.email" name="email" type="email" placeholder="Your email" required pattern=".+@.+">
     <div class="input-value-check">
-      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+      <img src="./../../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1">
-           <div *ngIf="(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (click)="inputInformation('email')">
+           <div *ngIf="(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (mouseenter)="inputInformation('email')" (mouseleave)="hideInformation('email')">
             <img src="./../../assets/img/email/checkbox/information-icon.png">
           </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="!(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)">
-      <div *ngIf="!(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (click)="inputInformation('email')">
+      <div *ngIf="!(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (mouseenter)="inputInformation('email')" (mouseleave)="hideInformation('email')">
         <img src="./../../assets/img/email/checkbox/information-icon.png">
       </div>
     </div>
@@ -37,14 +37,14 @@
    <div class="input-section">
     <textarea [(ngModel)]="contactData.message" name="message" type="text" placeholder="Your message" required></textarea>
     <div class="input-value-check">
-      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+      <img src="./../../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.message.length > 10">
-           <div *ngIf="(contactData.message.length > 10)" (click)="inputInformation('message')">
+           <div *ngIf="(contactData.message.length > 10)" (mouseenter)="inputInformation('message')" (mouseleave)="hideInformation('message')">
             <img src="./../../assets/img/email/checkbox/information-icon.png">
           </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="!(contactData.message.length > 10)">
-      <div *ngIf="!(contactData.message.length > 10)" (click)="inputInformation('message')">
+      <div *ngIf="!(contactData.message.length > 10)" (mouseenter)="inputInformation('message')" (mouseleave)="hideInformation('message')">
         <img src="./../../assets/img/email/checkbox/information-icon.png">
       </div>
     </div>
@@ -55,14 +55,14 @@
       <span class="checkbox-span">Please read and accept the  <a href="legalNotice">privacy policy</a></span>
     </div>
     <div class="input-value-check">
-      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+      <img src="./../../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.privacyPolice == true">
-      <div *ngIf="(contactData.privacyPolice == true)" (click)="inputInformation('checkbox')">
+      <div *ngIf="(contactData.privacyPolice == true)" (mouseenter)="inputInformation('checkbox')" (mouseleave)="hideInformation('checkbox')">
         <img src="./../../assets/img/email/checkbox/information-icon.png">
       </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="(contactData.privacyPolice == false)">
-      <div *ngIf="(contactData.privacyPolice == false)" (click)="inputInformation('checkbox')">
+      <div *ngIf="(contactData.privacyPolice == false)" (mouseenter)="inputInformation('checkbox')" (mouseleave)="hideInformation('checkbox')">
         <img src="./../../assets/img/email/checkbox/information-icon.png">
       </div>
     </div>
@@ -108,20 +108,20 @@
   <div id="email" *ngIf="language === 'de'" class="email-section-container">
 
   <h1 id="span1">Möchtest du über ein Projekt reden ?</h1>
-  <span id="span2">Lass und über deine Ideen reden und sie umsetzten</span>
+  <span id="span2">Lass und über deine Ideen reden und sie gemeinsam umsetzten</span>
 
   <form id="emailForm" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
    <div class="input-section">
     <input [(ngModel)]="contactData.name" name="name" type="text" placeholder="Dein Name" required>
     <div class="input-value-check">
-      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+      <img src="./../../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.name.length > 0">
-           <div *ngIf="(contactData.name.length > 0)" (click)="inputInformation('name')">
+           <div *ngIf="(contactData.name.length > 0)" (mouseenter)="inputInformation('name')" (mouseleave)="hideInformation('name')">
             <img src="./../../assets/img/email/checkbox/information-icon.png">
           </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="!(contactData.name.length > 0)">
-      <div *ngIf="!(contactData.name.length > 0)" (click)="inputInformation('name')">
+      <div *ngIf="!(contactData.name.length > 0)" (mouseenter)="inputInformation('name')" (mouseleave)="hideInformation('name')">
         <img src="./../../assets/img/email/checkbox/information-icon.png">
       </div>
     </div>
@@ -129,14 +129,14 @@
    <div class="input-section">
     <input [(ngModel)]="contactData.email" name="email" type="email" placeholder="Deine email" required pattern=".+@.+">
     <div class="input-value-check">
-      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+      <img src="./../../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1">
-           <div *ngIf="(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (click)="inputInformation('email')">
+           <div *ngIf="(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (mouseenter)="inputInformation('email')" (mouseleave)="hideInformation('email')">
             <img src="./../../assets/img/email/checkbox/information-icon.png">
           </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="!(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)">
-      <div *ngIf="!(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (click)="inputInformation('email')">
+      <div *ngIf="!(contactData.email.length > 5 && contactData.email.includes('@') && contactData.email.split('@')[1].length > 4 && contactData.email.split('@')[0].length > 1)" (mouseenter)="inputInformation('email')" (mouseleave)="hideInformation('email')">
         <img src="./../../assets/img/email/checkbox/information-icon.png">
       </div>
     </div>
@@ -144,14 +144,14 @@
    <div class="input-section">
     <textarea [(ngModel)]="contactData.message" name="message" type="text" placeholder="Deine Nachricht" required></textarea>
     <div class="input-value-check">
-      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+      <img src="./../../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.message.length > 10">
-           <div *ngIf="(contactData.message.length > 10)" (click)="inputInformation('message')">
+           <div *ngIf="(contactData.message.length > 10)" (mouseenter)="inputInformation('message')" (mouseleave)="hideInformation('message')">
             <img src="./../../assets/img/email/checkbox/information-icon.png">
           </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="!(contactData.message.length > 10)">
-      <div *ngIf="!(contactData.message.length > 10)" (click)="inputInformation('message')">
+      <div *ngIf="!(contactData.message.length > 10)" (mouseenter)="inputInformation('message')" (mouseleave)="hideInformation('message')">
         <img src="./../../assets/img/email/checkbox/information-icon.png">
       </div>
     </div>
@@ -162,14 +162,14 @@
       <span class="checkbox-span">Bitte lese und akzeptiere die <a href="legalNotice">privacy policy</a></span>
     </div>
     <div class="input-value-check">
-      <img src="./../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
+      <img src="./../../../assets/img/email/checkbox/icons8-häkchen-emoji-48.png"
            *ngIf="contactData.privacyPolice == true">
-      <div *ngIf="(contactData.privacyPolice == true)" (click)="inputInformation('checkbox')">
+      <div *ngIf="(contactData.privacyPolice == true)" (mouseenter)="inputInformation('checkbox')" (mouseleave)="hideInformation('checkbox')">
         <img src="./../../assets/img/email/checkbox/information-icon.png">
       </div>
       <img src="./../../assets/img/email/checkbox/icons8-rotes-kreuz-48.png"
            *ngIf="(contactData.privacyPolice == false)">
-      <div *ngIf="(contactData.privacyPolice == false)" (click)="inputInformation('checkbox')">
+      <div *ngIf="(contactData.privacyPolice == false)" (mouseenter)="inputInformation('checkbox')" (mouseleave)="hideInformation('checkbox')">
         <img src="./../../assets/img/email/checkbox/information-icon.png">
       </div>
     </div>
@@ -192,7 +192,7 @@
   </div>
 
   <div id="nameInformationContainer" class="d-none">
-    <span>Deine Name muss länger als 1 Zeichen sein</span>
+    <span>Dein Name muss länger als 1 Zeichen sein</span>
   </div>
 
   <div id="emailInformationContainer" class="d-none">

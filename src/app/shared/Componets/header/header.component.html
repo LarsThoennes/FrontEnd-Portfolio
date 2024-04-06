@@ -1,21 +1,24 @@
-<div class="header-container">
-  <div class="header-contents">
-    <a href="/">
-      <img class="header-logo" src="./../../../../assets/img/header/logo/logo1.jpeg">
-    </a>
-    <div class="header-buttons">
-      <button class="menu-button" (click)="toggleMenu()">
-        <div id="button" class="burger-menu-icon"></div>
-      </button>
-      <button *ngIf="language === 'en'" class="language-button" (click)="changeLanguage()">
-        <img src="./../../../../assets/img/header/language-flag/england.jpeg">
-      </button>
-      <button *ngIf="language === 'de'" class="language-button" (click)="changeLanguage()">
-        <img src="./../../../../assets/img/header/language-flag/german.jpeg">
-      </button>
+
+<div class="parent-container">
+  <div class="header-container">
+    <div class="header-contents">
+      <a href="/">
+        <img class="header-logo" src="./../../../../assets/img/header/logo/logo1.jpeg">
+      </a>
+      <div class="header-buttons">
+        <button *ngIf="language === 'en'" class="language-button" (click)="changeLanguage('de')">
+          <img src="./../../../../assets/img/header/language-flag/england.jpeg">
+        </button>
+        <button *ngIf="language === 'de'" class="language-button" (click)="changeLanguage('en')">
+          <img src="./../../../../assets/img/header/language-flag/german.jpeg">
+        </button>
+
+        <button class="menu-button" (click)="toggleMenu()">
+          <div id="button" class="burger-menu-icon"></div>
+        </button>
+      </div>
     </div>
   </div>
 </div>
 
 <app-menu-section (menuToggled)="toggleMenu()" *ngIf="showMenu"></app-menu-section>
-

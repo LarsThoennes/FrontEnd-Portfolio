@@ -1,7 +1,7 @@
 * {
   z-index: 3;
 }
-.parent-container-project-2 {
+.parent-container-project-3 {
   max-width: 1920px;
   height: 400px;
 
@@ -47,10 +47,6 @@
       animation: project-content-information-slide-in 0.5s;
       transform: translateX(0);
       opacity: 1;
-
-      #h1-mobile {
-        display: none;
-      }
     }
    }
   }
@@ -154,7 +150,7 @@
 }
 
 @media screen and (max-width: 2000px){
-  .parent-container-project-2 {
+  .parent-container-project-3 {
     height: 400px;
 
     &:hover {
@@ -244,7 +240,7 @@
 
         h1 {
           font-family: 'syne-extra-font';
-          font-size: 50px;
+          font-size: 80px;
           padding-top: 30px;
         }
 
@@ -303,7 +299,7 @@
 }
 
 @media screen and (max-width: 1850px){
-  .parent-container-project-2 {
+  .parent-container-project-3 {
     height: 400px;
 
     &:hover {
@@ -393,7 +389,7 @@
 
         h1 {
           font-family: 'syne-extra-font';
-          font-size: 50px;
+          font-size: 60px;
           padding-top: 30px;
         }
 
@@ -452,7 +448,7 @@
 }
 
 @media screen and (max-width: 1600px){
-  .parent-container-project-2 {
+  .parent-container-project-3 {
     height: 400px;
 
     &:hover {
@@ -601,7 +597,7 @@
 }
 
 @media screen and (max-width: 1350px){
-  .parent-container-project-2 {
+  .parent-container-project-3 {
     height: 400px;
 
     &:hover {
@@ -750,7 +746,7 @@
 }
 
 @media screen and (max-width: 1100px){
-  .parent-container-project-2 {
+  .parent-container-project-3 {
     height: 400px;
 
     &:hover {
@@ -795,10 +791,6 @@
         animation: project-content-information-slide-in-mobile 0.5s;
         transform: translateX(0);
         opacity: 1;
-
-        #h1-mobile {
-          display:contents;
-        }
       }
      }
     }
@@ -843,13 +835,9 @@
         transform: translateY(0px);
         opacity: 0;
 
-        #h1-destop {
-          display: none;
-        }
-
         h1 {
           font-family: 'syne-extra-font';
-          font-size: 35px;
+          font-size: 40px;
           padding-top: 20px;
         }
 
@@ -908,7 +896,7 @@
 }
 
 @media screen and (max-width: 650px){
-  .parent-container-project-2 {
+  .parent-container-project-3 {
     height: 400px;
 
     &:hover {
@@ -999,7 +987,7 @@
 
         h1 {
           font-family: 'syne-extra-font';
-          font-size: 25px;
+          font-size: 35px;
           padding-top: 20px;
         }
 
@@ -1058,7 +1046,7 @@
 }
 
 @media screen and (max-width: 500px){
-  .parent-container-project-2 {
+  .parent-container-project-3 {
     height: 400px;
 
     &:hover {
@@ -1143,7 +1131,7 @@
         display: flex;
         flex-direction: row;
         font-family: 'overpass-font';
-        gap: 50px;
+        gap: 0px;
         transform: translateY(0px);
         opacity: 0;
 
@@ -1208,7 +1196,7 @@
 }
 
 @media screen and (max-width: 380px){
-  .parent-container-project-2 {
+  .parent-container-project-3 {
     height: 400px;
 
     &:hover {
@@ -1293,7 +1281,7 @@
         display: flex;
         flex-direction: row;
         font-family: 'overpass-font';
-        gap: 50px;
+        gap: 0px;
         transform: translateY(0px);
         opacity: 0;
 

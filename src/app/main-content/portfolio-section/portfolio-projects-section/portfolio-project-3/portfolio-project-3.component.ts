@@ -3,14 +3,13 @@ import { Component } from '@angular/core';
 import { LanguageService } from '../../../../language.service';
 
 @Component({
-  selector: 'app-portfolio-project-2',
+  selector: 'app-portfolio-project-3',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './portfolio-project-2.component.html',
-  styleUrl: './portfolio-project-2.component.scss'
+  templateUrl: './portfolio-project-3.component.html',
+  styleUrl: './portfolio-project-3.component.scss'
 })
-export class PortfolioProject2Component {
-
+export class PortfolioProject3Component {
   language: string = 'en';
 
   constructor(private languageService: LanguageService) {}
@@ -19,13 +18,13 @@ export class PortfolioProject2Component {
     this.languageService.language$.subscribe(lang => (this.language = lang));
   }
 
-  openPolloLocoGithubURL() {
-    let pageURL = 'https://github.com/LarsThoennes/El-pollo-loco';
+  openPokedexGithubURL() {
+    let pageURL = 'https://github.com/LarsThoennes/Pokedex';
     window.open(pageURL, '_blank');
   }
 
-  openPolloLocoLiveTestURL() {
-    let pageURL = 'https://xn--lars-thnnes-xfb.de/El%20Pollo%20Loco/';
+  openPokedexLiveTestURL() {
+    let pageURL = 'https://xn--lars-thnnes-xfb.de/Pokedex/';
     window.open(pageURL, '_blank');
   }
 }

@@ -1,27 +1,108 @@
 .legal-notice-container {
-  padding-top: 10vh;
-  width: 100vw;
+  padding-top: 100px;
   background-color: rgb(255,252,243);
   font-family: 'overpass-font';
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   .legal-notice-content {
-    margin-right: 5vw;
-    margin-left: 5vw;
+    margin-right: 100px;
+    margin-left: 100px;
     font-size: 30px;
     padding-bottom: 10px;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width: 1920px){
   .legal-notice-container {
-    padding-top: 10vh;
-    width: 100vw;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 100px;
     background-color: rgb(255,252,243);
+    font-family: 'overpass-font';
+    padding-right: 0px;
+    padding-left: 0px;
 
     .legal-notice-content {
-      margin-right: 5vw;
-      margin-left: 5vw;
+      max-width: 90vw;
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .legal-notice-container {
+    padding-top: 100px;
+    background-color: rgb(255,252,243);
+    font-family: 'overpass-font';
+
+    .legal-notice-content {
+      max-width: 90vw;
       font-size: 16px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  .legal-notice-container {
+    padding-top: 100px;
+    background-color: rgb(255,252,243);
+    font-family: 'overpass-font';
+
+    .legal-notice-content {
+      max-width: 90vw;
+      font-size: 12px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 520px){
+  .legal-notice-container {
+    padding-top: 100px;
+    background-color: rgb(255,252,243);
+    font-family: 'overpass-font';
+
+    .legal-notice-content {
+      max-width: 80vw;
+      font-size: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 390px){
+  .legal-notice-container {
+    padding-top: 100px;
+    background-color: rgb(255,252,243);
+    font-family: 'overpass-font';
+
+    .legal-notice-content {
+      max-width: 80vw;
+      font-size: 8px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px){
+  .legal-notice-container {
+    padding-top: 100px;
+    background-color: rgb(255,252,243);
+    font-family: 'overpass-font';
+
+    .legal-notice-content {
+      max-width: 80vw;
+      font-size: 6px;
+      padding-bottom: 10px;
     }
   }
 }

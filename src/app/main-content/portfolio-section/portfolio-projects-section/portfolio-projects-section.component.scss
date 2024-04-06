@@ -1,177 +1,37 @@
 .project-container-section {
   padding-top: 15vh;
-  height: 6000px;
+  padding-bottom: 15vh;
   font-family: 'overpass-font';
   display: flex;
   flex-direction: column;
+  height: auto;
+  gap: 200px;
 }
 
-@media screen and (max-width: 5120px) and (max-height: 3000px){
+@media screen and (max-width: 1850px){
   .project-container-section {
-    padding-top: 15vh;
-    height: 2500px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
+    gap: 0px;
   }
 }
 
-@media screen and (max-width: 3700px) and (max-height: 3000px){
-  .project-container-section {
-    padding-top: 15vh;
-    height: 2100px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 3500px) and (max-height: 3000px){
-  .project-container-section {
-    padding-top: 15vh;
-    height: 2000px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 3000px) and (max-height: 3000px){
-  .project-container-section {
-    padding-top: 15vh;
-    height: 1800px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 2300px) and (max-height: 3000px){
-  .project-container-section {
-    padding-top: 15vh;
-    height: 1600px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1700px) and (max-height: 3000px){
-  .project-container-section {
-    padding-top: 15vh;
-    height: 1200px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1500px) and (max-height: 3000px){
-  .project-container-section {
-    padding-top: 15vh;
-    height: 1000px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1200px) and (max-height: 3000px){
+@media screen and (max-width: 1100px){
   .project-container-section {
     padding-top: 10vh;
-    height: 2400px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 10vh;
+    gap: 300px;
   }
 }
 
-@media screen and (max-width: 900px) and (max-height: 3000px){
+@media screen and (max-width: 500px){
   .project-container-section {
-    padding-top: 10vh;
-    height: 1900px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    gap: 120px;
   }
 }
 
-@media screen and (max-width: 770px) and (max-height: 3000px){
+@media screen and (max-width: 400px){
   .project-container-section {
-    padding-top: 10vh;
-    height: 1600px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 700px) and (max-height: 3000px){
-  .project-container-section {
-    padding-top: 10vh;
-    height: 1600px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 630px) and (max-height: 3000px){
-  .project-container-section {
-    padding-top: 10vh;
-    height: 1400px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 500px) and (max-height: 3000px){
-  .project-container-section {
-    padding-top: 10vh;
-    height: 1000px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 850px) and (max-height: 2000px){
-  .project-container-section {
-    padding-top: 10vh;
-    height: 2100px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 750px) and (max-height: 2000px){
-  .project-container-section {
-    padding-top: 10vh;
-    height: 1700px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 640px) and (max-height: 2000px){
-  .project-container-section {
-    padding-top: 10vh;
-    height: 1500px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 500px) and (max-height: 2000px){
-  .project-container-section {
-    padding-top: 10vh;
-    height: 1200px;
-    font-family: 'overpass-font';
-    display: flex;
-    flex-direction: column;
+    gap: 100px;
   }
 }

@@ -1,22 +1,34 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LanguageServiceComponent } from '../../language-service/language-service.component';
-
+import { LanguageService } from '../../../language.service';
 
 
 @Component({
   selector: 'app-footer-section',
   standalone: true,
-  imports: [CommonModule, LanguageServiceComponent],
+  imports: [CommonModule],
   templateUrl: './footer-section.component.html',
   styleUrl: './footer-section.component.scss'
 })
 export class FooterSectionComponent {
-  language: string = 'en';
+  language: string;
 
-  constructor(private languageService: LanguageServiceComponent) {}
+  constructor(private languageService: LanguageService) {
+    this.language = this.languageService.getCurrentLanguage();
+  }
 
-  ngOnInit() {
-    this.languageService.language$.subscribe(lang => (this.language = lang));
+  changeLanguage(lang: string): void {
+    this.languageService.setCurrentLanguage(lang);
+    this.language = lang;
+  }
+
+  openGithubProfile() {
+    let pageURL = 'https://github.com/LarsThoennes';
+    window.open(pageURL, '_blank');
+  }
+
+  openLinkedinProfile() {
+    let pageURL = 'https://www.linkedin.com/in/lars-th%C3%B6nnes-2b97742b3/';
+    window.open(pageURL, '_blank');
   }
 }

@@ -1,16 +1,18 @@
-<div class="menu-section-container">
-  <div class="menu-section-link-container">
-    <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" class="h1-border">
-      <a (click)="onMenuClick()" href="#aboutMe"><h1>About me</h1></a>
+<div class="parent-container-menu-section">
+  <div class="menu-section-container">
+    <div class="menu-section-link-container">
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" class="h1-border">
+        <a (click)="onMenuClick()" href="#aboutMe"><h1>About me</h1></a>
+      </div>
+      <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out" class="h1-border">
+        <a (click)="onMenuClick()" href="#mySkills"><h1>My skills</h1></a>
+      </div>
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" data-aos-easing="ease-in-out" class="h1-border">
+        <a (click)="onMenuClick()" href="#portfolio"><h1>Portfolio</h1></a>
+      </div>
     </div>
-    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="750" data-aos-easing="ease-in-out" class="h1-border">
-      <a (click)="onMenuClick()" href="#mySkills"><h1>My skills</h1></a>
+    <div>
+      <app-say-hi-menu-section></app-say-hi-menu-section>
     </div>
-    <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500" data-aos-easing="ease-in-out" class="h1-border">
-      <a (click)="onMenuClick()" href="#portfolio"><h1>Portfolio</h1></a>
-    </div>
-  </div>
-  <div>
-    <app-say-hi-menu-section></app-say-hi-menu-section>
   </div>
 </div>
