@@ -50,8 +50,9 @@
             height: 7vh;
             border: 3px solid black;
             transition: width 125ms ease-in-out;
-            font-size: 40px;
+            font-size: 28px;
             background-color: rgb(255,252,243);
+            font-family: 'overpass-font';
 
             &:hover {
               animation: shadow-pulse 1s ease-in-out infinite;
@@ -146,7 +147,7 @@
               height: 7vh;
               border: 3px solid black;
               transition: width 125ms ease-in-out;
-              font-size: 40px;
+              font-size: 24px;
               background-color: rgb(255,252,243);
 
               &:hover {
@@ -222,7 +223,7 @@
               width: 250px;
               height: 6VH;
               border: 3px solid black;
-              font-size: 30px;
+              font-size: 20px;
             }
           }
         }
@@ -282,7 +283,7 @@
               width: 250px;
               height: 6VH;
               border: 3px solid black;
-              font-size: 30px;
+              font-size: 18px;
             }
           }
         }

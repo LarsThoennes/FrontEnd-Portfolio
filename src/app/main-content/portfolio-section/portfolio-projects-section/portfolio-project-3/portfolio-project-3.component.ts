@@ -24,7 +24,7 @@ export class PortfolioProject3Component {
   }
 
   openPokedexLiveTestURL() {
-    let pageURL = 'https://xn--lars-thnnes-xfb.de/Pokedex/';
+    let pageURL = 'https://lars-thoennes.de/Pokedex/';
     window.open(pageURL, '_blank');
   }
 }

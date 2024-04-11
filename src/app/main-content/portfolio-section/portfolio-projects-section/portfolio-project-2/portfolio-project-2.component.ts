@@ -25,7 +25,7 @@ export class PortfolioProject2Component {
   }
 
   openPolloLocoLiveTestURL() {
-    let pageURL = 'https://xn--lars-thnnes-xfb.de/El%20Pollo%20Loco/';
+    let pageURL = 'https://lars-thoennes.de/El%20Pollo%20Loco/';
     window.open(pageURL, '_blank');
   }
 }

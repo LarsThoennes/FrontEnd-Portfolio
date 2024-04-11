@@ -27,7 +27,9 @@ export class PortfolioProject1Component {
 
 
   openJoinLiveTestURL() {
-    let pageURL = 'https://xn--lars-thnnes-xfb.de/Join/html/index.html';
+    let pageURL = 'https://lars-thoennes.de/Join/html/index.html';
     window.open(pageURL, '_blank');
   }
 }
+
+

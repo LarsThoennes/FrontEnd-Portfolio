@@ -28,7 +28,7 @@ export class FooterSectionComponent {
   }
 
   openLinkedinProfile() {
-    let pageURL = 'https://www.linkedin.com/in/lars-th%C3%B6nnes-2b97742b3/';
+    let pageURL = 'https://www.linkedin.com/in/lars-th%C3%B6nnes/';
     window.open(pageURL, '_blank');
   }
 }
