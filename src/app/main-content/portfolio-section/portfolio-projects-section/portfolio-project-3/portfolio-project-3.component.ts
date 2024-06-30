@@ -19,12 +19,12 @@ export class PortfolioProject3Component {
   }
 
   openPokedexGithubURL() {
-    let pageURL = 'https://github.com/LarsThoennes/Pokedex';
+    let pageURL = 'https://github.com/AdrianKrampikowski/dabubble';
     window.open(pageURL, '_blank');
   }
 
   openPokedexLiveTestURL() {
-    let pageURL = 'https://lars-thoennes.de/Pokedex/';
+    let pageURL = 'https://dabubble.lars-thoennes.de/#/';
     window.open(pageURL, '_blank');
   }
 }
